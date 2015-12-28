@@ -1,0 +1,11 @@
+<h1>Welcome to Mule</h1>
+<h2>A simple link bundler</h4
+
+<% @portfolios.each do |portfolio| %>
+  <div class = "portfolio">
+    <h3><%= link_to portfolio.title, portfolio_path(portfolio) %></h3>
+    <p><%= portfolio.description %></p>
+  </div>
+<% end %>
+
+<button><%= link_to "Create your Mule", new_portfolio_path %></button>
